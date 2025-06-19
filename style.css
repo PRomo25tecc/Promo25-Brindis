@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Fondo general de la página */
+body {
+  background-color: #fcfbe3;
+  font-family: 'montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo con imagen */
+.tarjeta {
+  background-image: url(fotos/fondothis.png); /* Imagen de fondo para la tarjeta */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-size: cover; /* Ajusta la imagen para que cubra toda la tarjeta */
+  background-position: center; /* Centra la imagen de fondo */
+  height: 65vh; /* Altura de la tarjeta: 65% de la altura de la ventana */
+  display: flex; /* Usa Flexbox para alinear contenido */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: flex-end; /* Alinea el contenido al fondo verticalmente */
+  padding-bottom: 175px; /* Espacio entre el contenido y el borde inferior */
+}
+
+/* Contenedor del contador */
+.reloj {
+  display: flex; /* Flexbox para alinear los bloques del contador */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  align-items: flex-end; /* Alinea los elementos en la parte inferior */
+  gap: 4px; /* Espacio entre los bloques del contador */
+  color: #5C6F58; /* Color del texto del contador */
+  flex-wrap: nowrap; /* No permite que los elementos se acomoden en varias líneas */
+  margin-bottom: -5%;
+}
+
+/* Estilos para cada bloque de unidad (días, horas, minutos, segundos) */
+.unidad {
+  font-family: "montserrat", sans-serif;
+  text-align: center; /* Centra el texto dentro de cada bloque */
+  display: flex; /* Flexbox para alinear verticalmente el número y el texto */
+  flex-direction: column; /* Acomoda el número arriba y el texto abajo */
+  align-items: center; /* Centra los elementos horizontalmente */
+  min-width: 60px; /* Ancho mínimo de cada bloque */
+}
+
+/* Estilo para el número del contador */
+.unidad span {
+  font-size: 28px; /* Tamaño de fuente grande para el número */
+  font-weight: 400; /* Grosor de fuente normal */
+  line-height: 1; /* Altura de línea igual al tamaño de fuente */
+  padding-bottom: 5px; /* Espacio debajo del número */
+}
+
+/* Estilo para la etiqueta (DÍAS, HORAS, etc.) */
+.unidad p {
+  font-size: 11px; /* Tamaño de fuente pequeño para el texto */
+  letter-spacing: 2px; /* Espacio entre letras para mayor claridad */
+  margin-top: 3px; /* Espacio arriba del texto */
+}
+
+/* Estilos para los dos puntos ":" que separan las unidades del contador */
+.separador {
+  font-size: 28px; /* Tamaño grande para que combine con los números */
+  font-weight: bold; /* Negrita para resaltar el separador */
+  color: #5C6F58; /* Color igual al del contador */
+  display: flex; /* Flexbox para alineación */
+  align-items: center; /* Centrado vertical */
+  padding-bottom: 28px; /* Ajuste vertical para alinearse con los números */
+}
+
+.frase-chu {
+  position: relative;                     /* Necesario para posicionar ::before y ::after */
+  background-color: #365f5b;              /* Fondo oscuro */
+  padding: 50px 38px;                     /* Espacio interno arriba/abajo y a los costados */
+  margin-top: 8vh;                       /* Baja el bloque en la pantalla */
+  text-align: center;
+}
+
+.frase-chu p {
+  color: #fcfbe3;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/* Línea arriba del texto */
+.frase-chu::before {
+  content: "";
+  position: absolute;
+  top: 35px; /* Distancia desde arriba del bloque */
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: #fcfbe3;
+}
+
+/* Línea abajo del texto */
+.frase-chu::after {
+  content: "";
+  position: absolute;
+  bottom: 35px; /* Distancia desde abajo del bloque */
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: #fcfbe3;
+}
+
+
+/*cuadro centrado de CUANDO*/
+.cuadro-cuando {
+   background-color: #fcfbe3;
+  text-align: center;       /* Centra todo el contenido */
+  margin: 0 auto -80px auto;        /* Separación y centrado */
+  width: 100;       /* Solo ocupa el ancho necesario */
+  padding: 20px;
+
+}
+
+.cuadro-cuando dotlottie-player {
+  width: 78px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cuadro-cuando h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+/*cuadro centrado de DONDE*/
+.cuadro {
+  color: #fcfbe3;
+  background-color: #5c6f58cb;
+  margin-top: 20%;
+  text-align: center;
+  padding: 6%;
+}
+
+.cuadro dotlottie-player {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;           /* Centra la animación */
+  margin-bottom: -20px;
+}
+
+.cuadroh2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+
+/*ines cosa q se esconde*/
+
+.asistencia {
+  font-size: 10px;
+  color: #365f5b;
+  text-align: center;
+  margin: 40px auto;
+  margin-top: 50px;
+  width: fit-content;
+  padding: 20px;
+  overflow: hidden;
+  transition: height 1.5s ease;
+  border-top: 2px solid #365f5b;
+  border-bottom: 2px solid #365f5b;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} 
+
+.asistencia :hover {
+  transform: scale(1.04); /*zoom de la imagen*/
+
+}
+
+.info-oculta {
+  display: none;
+  padding: 20px;
+  background-color: #365f5b;
+  color: #fcfbe3;
+  border-radius: 25px;
+  }
+
+.asistencia.mostrar .info-oculta {
+  display: block;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.11); }
+  100% { transform: scale(1); }
+}
+
+.asistencia-animada {
+  animation: pulse 3s infinite; /* 👈 Hace que se agrande cada 2s */
+  transition: transform 0.5s ease;
+}
+
+
+.cuadro-insta{
+  font-size: 12px;
+  color: #fcfbe3;
+  background-color: #365f5b;
+  margin-top: 20%;
+  text-align: center;
+  padding: 6%;
+}
+
+.cuadro-insta a{
+  color: #5c6f58;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block; 
+  padding: 1px 10px;
+  border-radius: 100px;
+  background-color: #fcfbe3;
+}
+
+
+.fa-brands  {
+  margin-top: 5px;
+  font-size: 40px; /* Cambiá este valor al tamaño que quieras */
+  color: #fcfbe3;      /* Podés cambiar también el color si querés */
+}
+
+
+
+/* cuadro centrado de foto*/
+.cuadro-foto {
+  text-align: center;
+  margin: 35px auto;
+  width: fit-content;
+  padding: 10px;
+  margin-top: 1px;
+ 
+}
+
+.cuadro-foto dotlottie-player {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -60px;
+}
+
+.cuadro-foto h2 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.cuadro-foto a{
+  color: #fcfbe3 ;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block; 
+  padding: 1px 20px;
+  border-radius: 100px;
+  background-color: #5c6f58;
+}
+
+#boton-musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;                  /* Empieza oculto */
+  transform: translateY(20px); /* Empieza desplazado */
+  z-index: 9999;
+  background-color: #365f5b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+#boton-musica.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+
+#boton-musica:hover {
+  background-color: #4a7d75;
+}
+
+/* Animación de sacudida */
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  10%  { transform: translateX(-8px); }
+  20%  { transform: translateX(8px); }
+  30%  { transform: translateX(-6px); }
+  40%  { transform: translateX(6px); }
+  50%  { transform: translateX(-4px); }
+  60%  { transform: translateX(4px); }
+  70%  { transform: translateX(-2px); }
+  80%  { transform: translateX(2px); }
+  90%  { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+#boton-musica.shake {
+  animation: shake 0.8s ease-in-out 0s 2 normal both;
+}
+
+
+
+footer {
+  font-size: 10px;
+  background-color: #365f5bda;
+  color: #fcfbe3;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 0px;
+  padding-bottom: 0%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+
+  padding: 10px 15px;
+  width: 100%;          
+  box-sizing: border-box; 
+}
+

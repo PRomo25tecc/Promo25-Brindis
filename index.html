@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TarjetaVirtual</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/contador.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <div class="tarjeta">
+        <div class="reloj">
+            <div class="unidad">
+            <span id="dias">00</span>
+            <p>DÍAS</p>
+            </div>
+            <div class="separador">:</div>
+            <div class="unidad">
+            <span id="horas">00</span>
+            <p>HORAS</p>
+            </div>
+            <div class="separador">:</div>
+            <div class="unidad">
+            <span id="minutos">00</span>
+            <p>MINUTOS</p>
+            </div>
+            <div class="separador">:</div>
+            <div class="unidad">
+            <span id="segundos">00</span>
+            <p>SEGUNDOS</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="frase-chu" data-aos="fade-up">
+        <p>Algunas noches se sienten eternas, y esta va a ser una de esas. Por eso quiero compartirla con quienes me acompañaron, me apoyaron y me hicieron sonreír</p>
+    </div>
+
+
+<!-- Reproductor de música oculto -->
+<audio id="musica-fondo" loop data-aos="fade-up">
+  <source src="audio/graduados.mp3" type="audio/mpeg">
+  
+</audio>
+
+<button id="boton-musica">
+  <i class="fas fa-play"></i>
+</button>
+
+   <div class="cuadro-cuando" data-aos="fade-up">
+    <dotlottie-player 
+        src="https://lottie.host/f96dd07f-9122-46f7-bbb8-70c412b56e2f/aRQDZFP3br.lottie"
+        background="transparent" 
+        speed="1" 
+        loop 
+        autoplay>
+    </dotlottie-player>
+    <h2>¿CUANDO?</h2>
+    <h3>13 DE DICIEMBRE</h3>
+    <h5>| 22:00 HS |</h5>
+</div>
+
+
+ <div class="cuadro" data-aos="fade-up">
+  <dotlottie-player 
+    src="https://lottie.host/f882d297-be7e-4aef-b580-c876fbf5819c/aXjVKZgaqI.lottie" 
+    background="transparent" 
+    speed="1" 
+    loop 
+    autoplay>
+  </dotlottie-player>
+  <h2>¿DONDE?</h2>
+  <H4>EN EL CLUB ATLETICO BELGRANO</H4>
+</div>
+
+ 
+  <div class="asistencia asistencia-animada" onclick="mostrarInfo(this)" data-aos="fade-up">
+  <h1>¿Valor y cómo pagar?</h1>
+  <div class="info-oculta">
+    <h3>$20000</h3>
+    <p>El pago puede realizarse en la Mutual Unión, simplemente acercándote y mencionando que es para la tarjeta de brindis de mi recepción.
+    Cualquier persona que atienda podrá ayudarte.</p>
+  </div>
+</div>
+
+
+  <div class="cuadro-insta" data-aos="fade-up">
+    <i class="fa-brands fa-instagram "></i>
+    <h1>Etiquetanos en todas tus fotos!!</h1>
+    <a href="https://www.instagram.com/promo25.tecc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><h3>@Promo25.tecc</h3></a>
+    
+  </div>
+
+<div class="cuadro-foto" data-aos="fade-up">
+
+  <dotlottie-player 
+    src="https://lottie.host/5f51ec72-da32-46d2-bdd3-000152d2aef0/5wq2PyIINI.lottie" 
+    background="transparent" 
+    speed="1" 
+    loop 
+    autoplay>
+  </dotlottie-player>
+
+  <h3>¡Album de fotos!</h3>
+  <p>Encontra todas las fotos de tus egresados favoritos en un solo lugar, aqui vas a ver tanto fotos de ese dia como anteriores.</p>
+  <a href="https://drive.google.com/drive/folders/1Yhkh5qZD1upIB-EXSU-Tod5q5fzScQ8C?usp=sharing"><h6>VER ALBUM</H6></a>
+
+
+       
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="contador.js"></script>
+
+
+
+<footer>
+  <p>© 2025 - Todos los derechos reservados</p>
+  <p>Nicola Elias & Dallia Ines</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1550, // duración de la animación en ms
+    once: true      // solo se anima una vez al hacer scroll
+  });
+</script>
+
+</body>
+</html>
