@@ -177,10 +177,10 @@ body {
 
 .info-oculta {
   display: none;
-  padding: 20px;
-  background-color: #365f5b;
-  color: #fcfbe3;
-  border-radius: 25px;
+  margin: 8px;
+  padding: 3px;
+  color:#365f5b;
+  font-size: 13px;
   }
 
 .asistencia.mostrar .info-oculta {
@@ -225,15 +225,35 @@ body {
   color: #fcfbe3;      /* Podés cambiar también el color si querés */
 }
 
+.bebida {
+  text-align: center;
+  margin: 10px auto;
+  width: fit-content;
+}
 
+.bebida dotlottie-player {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: -60px;
+}
+
+.bebida h2 {
+  color:#365f5b;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 40px;
+}
 
 /* cuadro centrado de foto*/
 .cuadro-foto {
+  background-color: #5c6f58cb;
   text-align: center;
   margin: 35px auto;
   width: fit-content;
   padding: 10px;
-  margin-top: 1px;
+  margin-top: -20px;
  
 }
 
@@ -242,22 +262,28 @@ body {
   height: 200px;
   display: block;
   margin: 0 auto;
-  margin-bottom: -60px;
+  margin-bottom: -65px;
+  margin-top: -30px;
 }
 
-.cuadro-foto h2 {
+.cuadro-foto h3 {
+  color:#fcfbe3;
   margin-top: 10px;
   font-size: 24px;
 }
 
+.cuadro-foto p {
+  color: #fcfbe3;
+}
+
 .cuadro-foto a{
-  color: #fcfbe3 ;
+  color:#365f5b ;
   text-decoration: none;
   font-size: 14px;
   display: inline-block; 
   padding: 1px 20px;
   border-radius: 100px;
-  background-color: #5c6f58;
+  background-color:#fcfbe3;
 }
 
 #boton-musica {
@@ -312,10 +338,10 @@ body {
 
 footer {
   font-size: 10px;
-  background-color: #365f5bda;
-  color: #fcfbe3;
+  background-color:#fcfbe3;
+  color:#4a7d75;
   text-align: center;
-  margin-top: 35px;
+  margin-top: -30px;
   margin-bottom: 0px;
   padding-bottom: 0%;
 
